@@ -2,7 +2,8 @@ import joblib
 import numpy as np
 
 # Load the trained model
-model = joblib.load("model/car_price_model.pkl")
+model = joblib.load("app/model/car_price_model.pkl")
+
 
 # Define a prediction function
 
