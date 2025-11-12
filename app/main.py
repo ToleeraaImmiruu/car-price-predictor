@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from model.model import predict_price  # your trained model loader
+
+from app.model.model import predict_price
+
 
 app = FastAPI(title="Car Price Prediction API")
 
