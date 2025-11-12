@@ -34,6 +34,9 @@ class CarInput(BaseModel):
     owner: str      # e.g., "First Owner"
     seats: int
 
+@app.get("/")
+def root():
+    return {"message": "Welcome to the Car Price Predictor API!"}
 @app.post("/predict")
 def predict_car_price(data: CarInput):
     try:
